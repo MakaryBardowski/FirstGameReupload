@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/WybierzImieMain"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/przycisk_212x57_text_edit"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:onClick="usunImie"
+        android:text="Wpisz imię."
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/przycisk_menu"
+        android:onClick="start"
+        android:text="@string/button_send"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/celeGry"
+        android:layout_width="0dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/ramka_na_surowce"
+        android:gravity="center"
+        android:text="@string/cele_gra"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="13sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WybierzImieMain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

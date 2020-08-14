@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".menuAtaku.atakPodgladWroga">
+
+    <TextView
+        android:id="@+id/iloscPiechotaWrog"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piechotaWrog" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/atak_pasek"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <ImageView
+        android:id="@+id/piechotaGracz"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="atakujacyWybierzPiechote"
+        android:src="@drawable/ikona_piechota_256x256"
+        app:layout_constraintBottom_toTopOf="@+id/imageView58"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/lucznicyGracz"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="atakujacyWybierzLucznikow"
+        android:src="@drawable/ikona_lucznicy_256x256"
+        app:layout_constraintBottom_toTopOf="@+id/imageView58"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/kawaleriaGracz"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="atakujacyWybierzKawaleria"
+        android:src="@drawable/ikona_kawaleria_256x256"
+        app:layout_constraintBottom_toTopOf="@+id/imageView58"
+        app:layout_constraintEnd_toStartOf="@+id/lucznicyGracz"
+        app:layout_constraintStart_toEndOf="@+id/piechotaGracz" />
+
+    <Button
+        android:id="@+id/przyciskPowrot"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/przycisk_menu"
+        android:onClick="powrot"
+        android:text="@string/powrot"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/przyciskAtakuj"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/przycisk_menu"
+        android:onClick="atak"
+        android:text="@string/atak_przycisk"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/kawaleriaWrog"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="AtakowanyWybierzKawalerie"
+        android:src="@drawable/ikona_kawaleria_wrog"
+        app:layout_constraintEnd_toStartOf="@+id/piechotaWrog"
+        app:layout_constraintStart_toEndOf="@+id/lucznicyWrog"
+        app:layout_constraintTop_toBottomOf="@+id/imageView58" />
+
+    <ImageView
+        android:id="@+id/lucznicyWrog"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="152dp"
+        android:onClick="AtakowanyWybierzLucznikow"
+        android:src="@drawable/ikona_lucznicy_wrog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView58" />
+
+    <ImageView
+        android:id="@+id/piechotaWrog"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="AtakowanyWybierzPiechote"
+        android:src="@drawable/ikona_piechota_wrog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView58" />
+
+    <TextView
+        android:id="@+id/iloscLucznicyWrog"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lucznicyWrog" />
+
+    <TextView
+        android:id="@+id/iloscKawaleriaWrog"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/piechotaWrog"
+        app:layout_constraintStart_toEndOf="@+id/lucznicyWrog"
+        app:layout_constraintTop_toBottomOf="@+id/kawaleriaWrog" />
+
+    <TextView
+        android:id="@+id/iloscKawaleriaGracz"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kawaleriaGracz" />
+
+    <TextView
+        android:id="@+id/iloscLucznicyGracz"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lucznicyGracz" />
+
+    <TextView
+        android:id="@+id/iloscPiechotaGracz"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piechotaGracz" />
+
+    <TextView
+        android:id="@+id/czyjaTura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:elevation="1px"
+        android:text="         nie bedzie odwrotu"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView58"
+        app:layout_constraintEnd_toEndOf="@+id/imageView58"
+        app:layout_constraintTop_toTopOf="@+id/imageView58" />
+
+    <TextView
+        android:id="@+id/turaGracza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:elevation="1px"
+        android:text="Jeśli zaatakujesz  "
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView58" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

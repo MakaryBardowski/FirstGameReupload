@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naukalayouteditor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wygrales_gre"
+        android:label="@string/nazwa_gra"
+        android:roundIcon="@drawable/wygrales_gre"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".menuAtaku.atakPodgladWroga"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuAtaku.menuAtaku"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WydarzenieActivty"
+            android:screenOrientation="portrait" />
+        <activity android:name=".rynekActivity"            android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.Militarne.KartaBudowaniaMilitarne"            android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuTreningu.menuTreninguActivity"             android:screenOrientation="portrait"
+            />
+        <activity android:name=".BladLubZbudowales"             android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.KartaBudowaniaMieszkalneGospodarcze"            android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.Militarne.menuBudowyMilitarne"            android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.Gospodarcze.menuBudowyGospodarcze"            android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.Mieszkalne.menuBudowyMieszkalne"             android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuBudowy.menuBudowyActivity"             android:screenOrientation="portrait"
+            />
+        <activity android:name=".menuGlowneActivity"             android:screenOrientation="portrait"
+            />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
